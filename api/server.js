@@ -25,6 +25,9 @@ try {
 }
 
 const port = process.env.PORT
+app.get("/", (req, res) => {
+  res.json({ message: "Server working ✅" });
+});
 
 
 app.listen(port, () => {
